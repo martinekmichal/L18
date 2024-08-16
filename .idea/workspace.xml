@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b517180-ca5e-4045-9f96-2f32c2852774" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UKOL/clients.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UKOL/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DATABAZE/autopujcovna.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DATABAZE/autopujcovna.py" beforeDir="false" afterPath="$PROJECT_DIR$/DATABAZE/autopujcovna.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UKOL/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/UKOL/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +43,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.autopujcovna.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.autopujcovna.executor": "Run",
+    "Python.server.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

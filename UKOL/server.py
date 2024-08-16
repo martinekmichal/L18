@@ -17,14 +17,14 @@ def broadcast(zprava, klient_socket):
 
 def obsluhuj_klienta(klient_socket, klient_adresa):
     try:
-        klient_socket.send(b"Zadej uživatelské jméno: ")
+        klient_socket.send('b"Zadej své uživateksé jméno: "')
         uzivatelske_jmeno = klient_socket.recv(1024).decode().strip()
 
-        klient_socket.send(b"Zadej heslo: ")
+        klient_socket.send('b"Zadej heslo: "')
         heslo = klient_socket.recv(1024).decode().strip()
 
         if uzivatele.get(uzivatelske_jmeno) == heslo:
-            klient_socket.send(b"Přihlášení úspěšné! Vítej!.\n")
+            klient_socket.send('b"Přihlášení úspěšné! Vítej!.\n"')
             broadcast(f"{uzivatelske_jmeno} se připojil/a k chatu.\n".encode(), klient_socket)
             klienti.append(klient_socket)
 
@@ -35,12 +35,12 @@ def obsluhuj_klienta(klient_socket, klient_adresa):
             broadcast(f"{uzivatelske_jmeno}: {zprava.decode()}".encode(), klient_socket)
 
         else:
-        klient_socket.send(b"Neplatné uživatelské jméno nebo heslo. Odpojeno!!.\n")
-        klient_socket.close()
+            klient_socket.send('b"Neplatné uživatelské jméno nebo heslo. Odpojeno!!.\n"')
+            klient_socket.close()
 
     except Exception as e:
         print(f"Chyba je: {e}")
-        klient_cosket.close()
+        klient_socket.close()
 
     finally:
         if klient_socket in klienti:
